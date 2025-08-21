@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("Images/Solar.png"); /* Path to your image */
+    background-size: cover;      /* Scale the image to cover the entire area */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-position: center; /* Center the image */
+}
+.section  {
+    perspective: 1000px;
+}
+.container {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: 1s;
+    transform: rotateX(60deg) rotateZ(-35deg) rotateY(15deg);
+    transform-style: preserve-3d;
+}
+.container-origin {
+    transform: rotate(0);
+}
+img {
+    max-width: 100%;
+}
+.card {
+    width: 20%;
+    margin: 10px;
+    transition: 0.3s;
+}
+.card:hover {
+    cursor: pointer;
+    transform: translateZ(10px);
+}

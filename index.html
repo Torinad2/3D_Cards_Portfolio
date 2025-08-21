@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Nik is Awesome</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+    <body>
+        <div class="section">
+            <div class="container">
+                <div class="card"><img src="Images/Nik.png" alt=""></div>
+                <div class="card"><img src="Images/Skills.png" alt=""></div>
+                <div class="card"><img src="Images/Contacts.png" alt=""></div>
+            </div>
+        </div>
+        <script>
+            $('.card').on('click', function() {
+                $('.container').toggleClass('container-origin');
+            });
+        </script>
+    </body>
+</html>
